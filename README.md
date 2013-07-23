@@ -1,5 +1,5 @@
 CANopenNode Tweaks
-==================
+------------------
 
 CANopenNode as used on our Cortex-M4 controllers.
 
@@ -10,12 +10,12 @@ http://sourceforge.net/projects/canopennode/
 All that exists here are minor tweaks for our specific projects.
 
 Notes on Usage
-==============
+--------------
 
 This repo is for use as a git submodule, and assumes object dictionary
 configuration (CO_OD.h, etc.) lives in a parent directory structured as follows.
 
-<project lib root>
+project lib root
   ./stm32f4-canopennode
     ./src
       ./CO_OD.c -> ../../od_config/src/CO_OD.c

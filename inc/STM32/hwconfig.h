@@ -35,15 +35,6 @@
 #define USART_DBG_TxPin             GPIO_Pin_6
 #define USART_DBG_Remap_State       ENABLE
 
-//#define USART_DBG_GPIO              GPIOA
-//#define USART_DBG_GPIO_CLK          RCC_APB2Periph_GPIOA
-//#define USART_DBG_RxPin             GPIO_Pin_10
-//#define USART_DBG_TxPin             GPIO_Pin_9
-//#define USART_DBG_Remap_State       DISABLE
-
-//#define USARTy_DBG_IRQn             USART1_IRQn
-//#define USARTy_DBG_IRQHandler       USART1_IRQHandler
-
 
 
 #endif

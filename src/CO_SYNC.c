@@ -25,6 +25,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "CANopen.h"
 
 #include "CO_driver.h"
 #include "CO_SDO.h"
@@ -66,15 +67,17 @@ static int16_t CO_SYNC_receive(void *object, CO_CANrxMsg_t *msg){
 
         if(*SYNC->operatingState == CO_NMT_OPERATIONAL){
           SYNC->running = 1;
+          
         }
         
         //if(SYNC->timer == 0)
         //  printf("sync->timer == 0\r\n");
         //sync_count++;
         SYNC->timer = 0;
+        
+        CO_TIMER_ISR();
     }
 
-    
     return CO_ERROR_NO;
 }
 

@@ -76,6 +76,8 @@ static int16_t CO_PDO_receive(void *object, CO_CANrxMsg_t *msg){
     }
     else RPDO->CANrxNew = 0;
 
+    CO_TIMER_ISR();
+
     return CO_ERROR_NO;
 }
 

@@ -176,7 +176,7 @@ void CO_EM_process(
         
     /* communication error (overrun, error state) */
     if(EM->errorStatusBits[2] || EM->errorStatusBits[3]){
-        printf("EM->errorStatusBits[2] || EM->errorStatusBits[3]\n\r");
+        //printf("EM->errorStatusBits[2] || EM->errorStatusBits[3]\n\r");
         errorRegister |= 0x10;
     }
     *EMpr->errorRegister = (*EMpr->errorRegister & 0xEE) | errorRegister;
